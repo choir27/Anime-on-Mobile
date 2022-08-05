@@ -1,0 +1,201 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clear {
+   clear: both;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.flex{
+    display: flex;
+}
+
+.row{
+    flex-direction: row;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.justifyContent{
+    justify-content: center;
+}
+
+.alignItems{
+    align-items: center;
+}
+
+.button{
+    background: none;
+    border: 2px solid white;
+    padding: 1rem 4rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+h1, a, p, h2, h3, i{
+    color: white;
+}
+
+.hidden{
+    display: none;
+}
+
+
+/*Home Header
+**************************************************************************************/
+
+#home main{
+    background: #242943;
+    height: 64vh;
+    width: 100%;
+    padding: 2rem;
+}
+
+
+#home header, #home .banner{
+    width: 70%;
+}
+
+#home .banner{
+    align-items: flex-start;
+}
+
+#home .banner h1{
+    font-size: 4rem;
+    width: 100%;
+    border-bottom: 2px solid white;
+    padding-bottom: 3rem;
+}
+
+#home .banner p{
+    width: 35%;
+    margin-right: 2rem;
+}
+
+#home .banner a{
+    font-size: 2.5rem;
+    align-self: center;
+}
+
+#home main div{
+    width: 100%;
+}
+
+#home main .box{
+    height: 100%;
+}
+
+body *{
+    border: 3px solid white;
+}
+
+#home .container{
+    justify-content: space-between;
+}
+
+#home header{
+    width: 100%;
+}
+
+#home nav#menu, #home ul{
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    position: fixed;
+}
+
+#home main #header .logo{
+    color: #242943;
+    background: white;
+    padding: .5rem 1rem;
+    font-size:1rem;
+    font-weight: bold;
+    letter-spacing: .5rem;
+    text-transform: uppercase;
+}
+
+nav i, nav a, p{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 3rem;
+}
+
+/*Home FGO
+**************************************************************************************/
+
+#home #one{
+    margin: 0rem;
+    padding: 0rem;
+    border: 0rem;
+}
+
+#home #one section{
+    margin: 0rem;
+    padding: 2rem;
+    border: 0rem;
+}
+
+#home .fgo{
+    width: 35%;
+    height: 60vh;
+    background: no-repeat url('assets/fateGrandOrder.jpg') center/cover;
+}
+
+#home .epic{
+    Width: 65%;
+    height: 60vh;
+    background: no-repeat url('assets/epicSeven.jpg') center/cover;
+}
+
+#home .frontline{
+    width: 60%;
+    height: 60vh;
+    background: no-repeat url('assets/frontline.jpg') center/cover;
+}
+
+#home .arknight{
+    width: 40%;
+    height: 60vh;
+    background: no-repeat url('assets/arknight.jpg') center/cover;
+}
+
+#home .genshin{
+    width: 40%;
+    height: 60vh;
+    background: no-repeat url('assets/genshin.jpg') center/cover;
+}
+
+#home .priconne{
+    width: 60%;
+    height: 60vh;
+    background: no-repeat url('assets/priconne.jpg') center/cover;
+}
+
+#home .grid, #home #one div #home #one{
+    height: 100%;
+}
