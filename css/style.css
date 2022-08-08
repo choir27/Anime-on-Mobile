@@ -55,9 +55,6 @@ li{
     list-style-type: none;
 }
 
-h1, a, p, h2, h3, i{
-    color: white;
-}
 
 .hidden{
     display: none;
@@ -108,10 +105,6 @@ h1, a, p, h2, h3, i{
     height: 100%;
 }
 
-body *{
-    border: 3px solid white;
-}
-
 #home .container{
     justify-content: space-between;
 }
@@ -147,14 +140,14 @@ h3{
 
 /*Home FGO
 **************************************************************************************/
-
 #home #one{
     margin: 0rem;
     padding: 0rem;
     border: 0rem;
 }
 
-#home #one section{
+
+#home section{
     margin: 0rem;
     padding: 2rem;
     border: 0rem;
@@ -163,39 +156,87 @@ h3{
 #home .fgo{
     width: 35%;
     height: 60vh;
-    background: no-repeat url('assets/fateGrandOrder.jpg') center/cover;
 }
 
 #home .epic{
     Width: 65%;
     height: 60vh;
-    background: no-repeat url('assets/epicSeven.jpg') center/cover;
 }
 
 #home .frontline{
     width: 60%;
     height: 60vh;
-    background: no-repeat url('assets/frontline.jpg') center/cover;
 }
 
 #home .arknight{
     width: 40%;
     height: 60vh;
-    background: no-repeat url('assets/arknight.jpg') center/cover;
 }
 
 #home .genshin{
     width: 40%;
     height: 60vh;
-    background: no-repeat url('assets/genshin.jpg') center/cover;
 }
 
 #home .priconne{
     width: 60%;
     height: 60vh;
-    background: no-repeat url('assets/priconne.jpg') center/cover;
 }
 
 #home .grid, #home #one div #home #one{
     height: 100%;
 }
+
+
+#home .priconne::before{
+    background: no-repeat url('assets/priconne.jpg') center/cover;
+}
+
+#home .genshin::before{
+    background: no-repeat url('assets/genshin.jpg') center/cover;
+}
+
+#home .arknight::before{
+background: no-repeat url('assets/arknight.jpg') center/cover;
+}
+
+#home .frontline::before{
+background: no-repeat url('assets/frontline.jpg') center/cover;
+}
+
+#home .fgo::before{
+background: no-repeat url('assets/fateGrandOrder.jpg') center/cover;
+}
+
+#home .epic::before{
+background: no-repeat url('assets/epicSeven.jpg') center/cover;
+}
+
+#home #one section{
+position:relative;
+}
+
+#home #one div section::before{
+    opacity: .25;
+    position:absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    width:auto;
+    height:auto;
+    z-index:-3;
+    content:"";
+}
+
+#home #one div section:hover, #home #one div section::before:hover{
+    opacity: 100%;
+}
+
+
+
+body *{
+    border: 3px solid white;
+}
+
+
