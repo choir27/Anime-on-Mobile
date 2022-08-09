@@ -60,17 +60,28 @@ li{
     display: none;
 }
 
+#home header a, #home header p, #home header h1, #home header i, #home .banner h1, #home .banner p, #home .banner a{
+    color: white;
+}
 
 /*Home Header
 **************************************************************************************/
+
+#header{
+position: fixed;
+background: #242943;
+
+}
 
 #home main{
     background: #242943;
     height: 64vh;
     width: 100%;
-    padding: 2rem;
 }
 
+#home main div{
+    padding: 2rem;
+}
 
 #home header, #home .banner{
     width: 70%;
@@ -188,55 +199,98 @@ h3{
 }
 
 
-#home .priconne::before{
+#home .priconne{
+    background: no-repeat url('assets/transparentPriconne.png') center/cover;
+}
+
+#home .priconne:hover{
     background: no-repeat url('assets/priconne.jpg') center/cover;
 }
 
-#home .genshin::before{
+#home .priconne:hover,#home  .genshin:hover,#home  .arknight:hover,#home  .epic:hover,#home  .fgo:hover,#home  .frontline:hover{
+transition: .35s;
+}
+
+
+#home .genshin{
+    background: no-repeat url('assets/transparentGenshin.png') center/cover;
+}
+
+#home .genshin:hover{
     background: no-repeat url('assets/genshin.jpg') center/cover;
 }
 
-#home .arknight::before{
+#home .arknight{
+background: no-repeat url('assets/transparentArknight.png') center/cover;
+}
+
+#home .arknight:hover{
 background: no-repeat url('assets/arknight.jpg') center/cover;
 }
 
-#home .frontline::before{
+
+#home .frontline{
+background: no-repeat url('assets/transparentFrontline.png') center/cover;
+}
+
+#home .frontline:hover{
 background: no-repeat url('assets/frontline.jpg') center/cover;
 }
 
-#home .fgo::before{
+#home .fgo{
+background: no-repeat url('assets/transparentFGO.png') center/cover;
+}
+
+#home .fgo:hover{
 background: no-repeat url('assets/fateGrandOrder.jpg') center/cover;
 }
 
-#home .epic::before{
+#home .epic{
+background: no-repeat url('assets/transparentEpic.png') center/cover;
+}
+
+
+#home .epic:hover{
 background: no-repeat url('assets/epicSeven.jpg') center/cover;
 }
 
-#home #one section{
-position:relative;
-}
-
-#home #one div section::before{
-    opacity: .25;
-    position:absolute;
-    top:0;
-    bottom:0;
-    right:0;
-    left:0;
-    width:auto;
-    height:auto;
-    z-index:-3;
-    content:"";
-}
-
-#home #one div section:hover, #home #one div section::before:hover{
-    opacity: 100%;
+#home a{
+    color: black;
 }
 
 
+/*Footer
+**************************************************************************************/
 
-body *{
-    border: 3px solid white;
+#footer{
+    background: #242943;
+}
+
+#footer h3, #footer a, #footer a, #footer span, #footer label, #footer small, #footer i{
+    font-size: 3rem;
+    color: white;
 }
 
 
+#footer form{
+    width: 60%;
+}
+
+#footer section{
+    width: 40%;
+}
+
+#footer input{
+    width: 60%;
+    background: rgba(42,47,74);
+    height: 6vh;
+}
+
+#footer .form{
+width: 100%;
+padding: 3rem;
+}
+
+#footer .form div{
+    width: 100%;
+}
