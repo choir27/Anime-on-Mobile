@@ -85,14 +85,16 @@
 				<!-- Footer -->
 					<footer id="footer">
 						<div class = 'flex'>
-						<form class = 'flex alignItems column' netlify method="post" action="#" netlify-honeypot="bot-field" data-netlify="true">
+						<form class = 'flex  column' netlify method="post" action="#" netlify-honeypot="bot-field" data-netlify="true">
 							<p class="hidden">
 								<label>
 								Don’t fill this out if you’re human: <input name="bot-field" />
 								</label>
 							</p>
-							<div class = 'flex form'>
-								<div class = 'flex column'>
+
+							<div class = 'flex alignItems column container-alt'>
+							<div class = 'flex form justifyContent'>
+								<div class = 'flex column name'>
 								<label for="name">Name</label>
 								<input type="text" name="name" id="name" />
 								</div>
@@ -101,31 +103,45 @@
 								<input type="text" name="email" id="email" />
 								</div>
 							</div>
+
 								<label for="message">Message</label>
 								<textarea name="message" id="message" rows="6"></textarea>
-							
-							<input type="submit" value="Send Message" class="primary" />
-							<input type="reset" value="Clear" />
+
+							<div class ='flex buttons'>
+							<input type="submit" value="Send Message" class="send" />
+							<input type="reset" value="Clear" class = 'reset' />
+							</div>
+						</div>
+
 						
 					</form>
 					
 
-			<section class = 'column flex alignItems'>
+			<section class = 'column flex alignItems' id = 'icons'>
+				<div class = 'contact flex alignItems'>
 				<span class="fa-solid fa-envelope"></span>
+				<div class = 'flex column'>
 				<h3>Email</h3>
 				<a>richardchoi54@gmail.com</a>
+				</div>
+				</div>
 
-			<ul class="icons">
-				<li class = 'flex alignItems justifyContent'><a target = '_blank' href = 'https://www.facebook.com/richard.choi.54772/about?section=bio&lst=100052959996942%3A100052959996942%3A1593271248'><i class="fa-brands fa-facebook-f"></i></a></li>
-				<li class = 'flex alignItems justifyContent'><a target = '_blank' href = 'https://www.linkedin.com/in/richard-choir/'><i class="fa-brands fa-linkedin"></i></a></li>
-				<li class = 'flex alignItems justifyContent'><a target = '_blank' href = 'https://www.instagram.com/225kh_drw/?hl=en'><i class="fa-brands fa-instagram"></i></a></li>
-				<li class = 'flex alignItems justifyContent'><a target = '_blank' href = 'https://twitter.com/choir241'><i class="fa-brands fa-twitter"></i></a></li>
-			</ul>
+				<ul class = 'icons flex'>
+					<div class = 'flex'>
+					<li class = 'flex alignItems justifyContent'><a target = '_blank' href = 'https://www.facebook.com/richard.choi.54772/about?section=bio&lst=100052959996942%3A100052959996942%3A1593271248'><i class="fa-brands fa-facebook-f"></i></a></li>
+					<li class = 'flex alignItems justifyContent'><a target = '_blank' href = 'https://www.linkedin.com/in/richard-choir/'><i class="fa-brands fa-linkedin"></i></a></li>
+					<li class = 'flex alignItems justifyContent'><a target = '_blank' href = 'https://www.instagram.com/225kh_drw/?hl=en'><i class="fa-brands fa-instagram"></i></a></li>
+					<li class = 'flex alignItems justifyContent'><a target = '_blank' href = 'https://twitter.com/choir241'><i class="fa-brands fa-twitter"></i></a></li>
+					</div>
+				</ul>
 
-
+				<div class = 'portfolio flex alignItems'>
 				<span class="fa-solid fa-house-chimney"></span>
+				<div class = 'flex column'>
 				<h3>My Portfolio:</h3>
 				<a target="_blank" href = "#">Portfolio</a>
+				</div>
+				</div>
 			<section>
 			</div>				
 			<span>&copy; Richard Design: <a href="https://html5up.net">HTML5 UP</a></span>

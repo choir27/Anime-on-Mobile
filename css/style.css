@@ -266,31 +266,109 @@ background: no-repeat url('assets/epicSeven.jpg') center/cover;
     background: #242943;
 }
 
-#footer h3, #footer a, #footer a, #footer span, #footer label, #footer small, #footer i{
+#footer h3, #footer a, #footer a, #footer span, #footer label, #footer small, #footer i, #footer input{
     font-size: 3rem;
     color: white;
 }
 
-
 #footer form{
-    width: 60%;
+    align-items: flex-end;
+    padding: 2rem;
 }
+
 
 #footer section{
     width: 40%;
 }
 
+#footer label{
+    margin-bottom: 2rem;
+}
+
 #footer input{
-    width: 60%;
+    width: 100%;
     background: rgba(42,47,74);
     height: 6vh;
 }
 
 #footer .form{
 width: 100%;
-padding: 3rem;
+padding-bottom: 2rem;
 }
 
-#footer .form div{
+#footer .name{
+    padding-right:2rem;
+
+}
+
+#footer div{
     width: 100%;
+}
+
+#footer textarea{
+    width: 100%;
+    background: rgba(42,47,74);
+    height: 36vh;
+}
+
+#footer .buttons input{
+    width: 40%;
+}
+
+#footer .buttons{
+    padding: 2rem;
+    justify-content: space-around;
+}
+
+#footer .container-alt{
+    width: 80%;
+}
+
+#footer .send{
+    background-color: white;
+    border: 3px solid white;
+    color: rgba(42,47,74);
+}
+
+#footer .reset{
+    border: 1px solid rgba(42,47,74);
+    border: 3px solid white;
+}
+
+#footer #icons{
+    width: 40%;
+    justify-content: center;
+}
+
+
+#footer .icons a, #footer.icons i{
+    color: white;
+    font-size: 5rem;
+}
+
+#footer li, #footer ul{
+    height: 4rem;
+    position: relative;
+}   
+
+#footer .icons{
+    height: 15vh;
+    padding: 2rem;
+    justify-content: flex-start;
+}
+
+#footer .icons div{
+    width: 60%;
+    justify-content: space-around;
+}
+
+
+#footer span{
+    height: 20%;
+ padding: 2rem;
+}
+
+#footer .contact, #footer .portfolio, #footer .icons{
+    padding: 1rem;
+    border-bottom: 2px solid white;
 }
